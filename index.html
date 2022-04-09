@@ -1,0 +1,144 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="main">
+
+<h1 id="title">Survey Form</h1>
+<p id="description">You can take a survey, so we can know</p>
+<form id="survey-form">
+    <div class="form-content">
+        <label class="header-label" id="name-label" for="name">Name</label>
+        <input 
+            type="text"
+            id="name"
+            placeholder="Your name"
+            class="text-input"
+            required
+        /> 
+    </div>
+    <div class="form-content">
+        <label class="header-label" id="email-label" for="email">Email</label>
+        <input 
+            type="email"
+            id="email"
+            placeholder="Your email"
+            class="text-input"
+            required
+        />
+    </div>
+    <div class="form-content">
+        <label class="header-label" id="age-label" for="age">Age</label>
+        <input 
+            type="number"
+            name="age"
+            id="number"
+            min="18"
+            max="99"
+            class="text-input"
+            placeholder="Your age"
+        />
+    </div>
+    <div class="form-content">
+        <p class="text">How would you estimate our services?</p>
+        <select id="dropdown" name="rate" class="text-input" required>
+            <option disabled selected value>Choose your rate to our services</option>
+            <option>Very well</option>
+            <option>Good</option>
+            <option>Could be better</option>
+            <option>Bad</option>
+            <option>Very bad</option>
+        </select>
+    </div>
+    <div class="form-content">
+        <p class="text">Would you choose our services again?</p>
+        <label>
+            <input
+                checked
+                type="radio"
+                class="input-radio"
+                name="loyalty"
+            />
+            Yes
+        </label>
+        <label>
+            <input
+                name="loyalty"
+                type="radio"
+                class="input-radio"
+            />
+            Maybe
+        </label>
+        <label>
+            <input
+                name="loyalty"
+                type="radio"
+                class="input-radio"
+            />
+            No
+        </label>
+    </div>
+    <div class="form-content">
+        <p class="text">
+            What we should improve?
+            <span class="clue">(Check all that apply)</span>
+        </p>
+        <label>
+            <input
+                type="checkbox"
+                class="input-checkbox"
+                value="Reduce time of response"
+            />
+            Reduce time of response
+        </label>
+        <label>
+            <input
+                type="checkbox"
+                class="input-checkbox"
+                value="Improve Graphical User Interface"
+            />
+            Improve Graphical User Interface
+        </label>
+        <label>
+            <input
+                type="checkbox"
+                class="input-checkbox"
+                value="Add new practical features"
+            />
+            Add new practical features
+        </label>
+        <label>
+            <input
+                type="checkbox"
+                class="input-checkbox"
+                value="Reduce the price of our services"
+            />
+            Reduce the price of our services
+        </label>
+        <label>
+            <input
+                type="checkbox"
+                class="input-checkbox"
+                value="Update User terms"
+            />
+            Update User terms
+        </label>
+    </div>
+    <div class="form-content">
+        <p class="text">Comment if you have more to say</p>
+        <textarea
+            placeholder="Enter your comment here..."
+            class="input-textarea"
+        ></textarea>
+    </div>
+    <div class="form-content">
+        <button type="submit" id="submit">
+            Submit
+        </button>
+    </div>
+</form>
+</body>
+</html>
+
